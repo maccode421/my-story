@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="#">
+  <title>Tell A Tale</title>
+</head>
+
+<body class="container">
+  <h1>Tell A Tale</h1>
+  <ul>
+    <a href="stories.html">
+      <li>Stories</li>
+    </a>
+    <a href="login.html">
+      <li>Login</li>
+    </a>
+    <a href="create.html">
+      <li>Create Account</li>
+    </a>
+  </ul>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+    New Story
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Tell A Tale</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <a href="newStory.html">
+    <button id="newStory">New Story</button>
+  </a> -->
+  <div id="story">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatibus officiis modi aspernatur iure nesciunt, laudantium fuga aliquam necessitatibus et, repellat repellendus reiciendis odit totam odio deleniti delectus? Fuga dolores a ipsum,
+      dignissimos numquam odit suscipit iure, ipsa esse voluptatum vero, quo rerum ab dicta. Quos excepturi rem recusandae illum exercitationem mollitia fuga velit facere aspernatur! Incidunt qui ab doloribus labore nesciunt perferendis iusto consequatur
+      expedita dolorem nobis quasi quam, asperiores excepturi! Atque minus nobis fugiat animi, inventore dolor aut qui, distinctio omnis veniam accusamus provident itaque impedit quae, iure quibusdam dolores velit dolore modi doloremque consectetur laudantium
+      excepturi! Similique.</p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
