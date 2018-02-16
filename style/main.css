@@ -2,7 +2,7 @@
   text-align: center;
 } */
 
-ul {
+#ulhome {
   list-style-type: none;
   text-align: center;
 }
@@ -24,4 +24,8 @@ li {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+#nobull {
+  list-style-type: none;
 }

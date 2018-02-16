@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="style/main.css">
   <title>Tell A Tale</title>
 </head>
+
 <body>
-  <h1>login page</h1>
+  <h1>Login Page</h1>
   <div class="">
-    <label for="email">Email</label>
-    <input type="email" name="" placeholder="Enter Email">
+    <form name="login">
+      <label for="email">Email</label><br>
+      <input type="email" name="" placeholder="Enter Email">
   </div>
   <div class="">
-    <label for="password">Password</label>
-    <input type="text" name="" placeholder="Enter Password">
+    <label for="password">Password</label><br>
+    <input type="text" name="" placeholder="Enter Password"><br>
+    <input type="button" onclick="check(this.form)" value="Login" />
+    <input type="reset" value="Cancel" />
+    </form>
   </div>
-  
+  <div class="">
+    <ul id="nobull">
+      <li><a href="create.html">Create Account</a></li>
+      <li><a href="#">Forgot Password</a></li>
+    </ul>
+  </div>
   <script type="text/javascript" src="#"></script>
 </body>
+
 </html>
