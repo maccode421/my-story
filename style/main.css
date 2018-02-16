@@ -1,8 +1,8 @@
-/* body {
+body {
   text-align: center;
-} */
+}
 
-#ulhome {
+.nav {
   list-style-type: none;
   text-align: center;
 }
