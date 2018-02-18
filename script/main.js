@@ -1,3 +1,5 @@
+const create = require('./create')
+
 // function to check email & password
 function check(form) {
   // the following code checkes whether the entered email and password are matching
@@ -7,15 +9,5 @@ function check(form) {
   } else {
     // displays error message
     alert("Error Password or Email")
-  }
-}
-
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
   }
 }
