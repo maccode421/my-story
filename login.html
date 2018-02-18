@@ -24,10 +24,44 @@
   </div>
   <div class="">
     <ul id="nobull">
-      <li><a href="create.html">Create Account</a></li>
+      <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Create Account</a></li>
       <li><a href="#">Forgot Password</a></li>
     </ul>
   </div>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="">
+      <h1>Create Account</h1>
+      <div class="container">
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><strong>Email</Strong></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw-repeat"><strong>Repeat Password</strong></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label id="gender"><strong>Gender</strong></label>
+        <input type="radio" name="msex" value="Male" /><span>Male</span>
+        <input type="radio" name="fsex" value="Female" /><span>Female</span>
+        <br>
+        <label for="date"><strong>Date of Birth</strong></label>
+        <input type="date" name="" value="">
+        <br>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div class="clearfix">
+          <button type="submit" class="btn" id="signupbtn">Sign Up</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn" id="cancelbtn">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
   <script type="text/javascript" src="script/main.js"></script>
 </body>
 
