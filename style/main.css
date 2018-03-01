@@ -39,6 +39,7 @@ body {
 }
 
 /* Full-width input fields */
+input[name=alias],
 input[name=email],
 input[name=psw],
 input[name=psw-repeat] {
@@ -51,6 +52,7 @@ input[name=psw-repeat] {
 }
 
 /* Add a background color when the inputs get focus */
+input[name=alias]:focus,
 input[name=email]:focus,
 input[name=psw]:focus,
 input[name=psw-repeat]:focus {
@@ -115,7 +117,7 @@ button:hover {
 
   /* Enable scroll if needed */
   background-color: #474e5d;
-  padding-top: 50px;
+  padding-top: 1px;
 }
 
 /* Modal Content/Box */

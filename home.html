@@ -21,7 +21,7 @@
       <ul class="nav">
         <li><a href="stories.html">Stories</a></li>
         <li><a href="login.html">Login</a></li>
-        <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Create Account</a></li>
+         <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Create Account</a></li>
       </ul>
     </nav>
   </div>
@@ -57,6 +57,9 @@
       excepturi! Similique.</p>
   </div>
 
+  
+
+  <!-- Create Account Modal -->
   <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     <form class="modal-content" action="">
@@ -64,20 +67,26 @@
       <div class="container">
         <p>Please fill in this form to create an account.</p>
         <hr>
+        <label for="alias"><strong>Alias</Strong></label>
+        <input type="text" placeholder="Enter Alias" name="alias" required>
+
         <label for="email"><strong>Email</Strong></label>
         <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label id="gender"><strong>Gender</strong></label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br>
+        <label for="date"><strong>Date of Birth</strong></label><br>
+        <input type="date" name="" value="">
+        <br>
+
         <label for="psw"><strong>Password</strong></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
         <label for="psw-repeat"><strong>Repeat Password</strong></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-        <label id="gender"><strong>Gender</strong></label>
-        <input type="radio" name="msex" value="Male" /><span>Male</span>
-        <input type="radio" name="fsex" value="Female" /><span>Female</span>
-        <br>
-        <label for="date"><strong>Date of Birth</strong></label>
-        <input type="date" name="" value="">
-        <br>
         <label>
           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
